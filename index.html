@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>КолодецСпецСтрой</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper">
+            <div class="logo">
+                <img class="logo__img" src="img/logo.png" alt="КолодецСпецСтрой">
+            </div>
+            <div class="header__info">
+                <h1>КолодецСпецСтрой</h1>
+                <h3>Многопрофильная организация</h3>
+            </div>
+            <div class="contacts">
+                <span class="contacts__phone">+7 (987) 654-32-10</span>
+                <span class="contacts__phone">+7 (987) 654-32-10</span>
+                <span class="contacts__email">somemail@yandex.ru</span>
+            </div>
+        </div>
+    </div>
+    <div class="main-page wrapper">
+        <div class="advantages">
+            <ul class="advantages__list">
+                <li class="advantages__item advantages__item--full-day"><span></span>Работаем круглосуточно</li>
+                <li class="advantages__item advantages__item--region"><span></span>По Рязани<br>и области</li>
+                <li class="advantages__item advantages__item--full-week"><span></span>Без выходных и праздничных дней</li>
+            </ul>
+        </div>
+        <div class="side-bar side-bar--left">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="active" href="">Чистка колодцев</a></li>
+                    <li class="nav__item"><a href="">Услуги автокрана</a></li>
+                    <li class="nav__item"><a href="">Бурение скважин</a></li>
+                    <li class="nav__item"><a href="">Сантехнические работы</a></li>
+                    <li class="nav__item"><a href="">Обустройство квартир "под ключ"</a></li>
+                    <li class="nav__item"><a href="">Услуги автокрана</a></li>
+                    <li class="nav__item"><a href="">Бурение скважин</a></li>
+                    <li class="nav__item"><a href="">Сантехнические работы</a></li>
+                    <li class="nav__item"><a href="">Обустройство квартир "под ключ"</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="page">
+            <h3 class="page__heading">Чистка колодцев</h3>
+            <p>
+                Чистка колодцев любой глубины от <b>5000 руб!</b> <br>
+                Дополнительная промазка швов - <b>1000 руб.</b> <br>
+                Извлечение со дня щитов, каменной насыпи - от <b>1000 руб.</b> <br>
+                Чистка стенок колец от грязи, налёта, остатков гниения - <b>1000 руб.</b> <br>
+                 <br>
+            </p>
+               
+                <h4>Копка питьевых колодцев:</h4>
+            <p>
+                - <b>2500 руб.</b> копка с установкой с 1 по 5 кольцо (в т.ч. выше уровня земли), за одно кольцо (диаметр = 1м, высота от 0.8 до 0.9) <br>
+                - <b>3000 руб.</b> копка с установкой с 6 по 10 кольцо, за одно кольцо. <br>
+                - <b>3500 руб.</b> копка с установкой с 11 по 15 кольцо, за одно кольцо. <br>
+                - <b>4500 руб.</b> копка с установкой с 16 по 20 кольцо, за одно кольцо. <br>
+                - <b>6000 руб.</b> копка с установкой с 21 по 25 кольцо, за одно кольцо. <br>
+                - <b>8000 руб.</b> копка с установкой с 26 по 30 кольцо, за одно кольцо. <br>
+                - <b>300 руб.</b> скрепление колец скобами 10х220. Делается при угрозе отрыва колец, либо по желанию заказчика! <br>
+                 <br>
+                Перенос грунта оценивается в 1000 руб. за каждое выкопанное кольцо и производится на расстояние не далее 50 м. от места проведения работ. <br>
+                 <br>
+            </p>
+            <h4>Остались вопросы? Мы вам перезвоним.</h4>
+            <button id="call-me">Заказать звонок</button>
+        </div>
+        <div class="side-bar side-bar--right">
+            <h4 class="side-bar__heading">Калькулятор земляных работ</h4>
+            <div class="calculator">
+                Вид работ: <br>
+                <label for="dig-out"><input type="radio" name="type" id="dig-out" value="100">Выкопать</label>
+                <label for="bury"><input type="radio" name="type" id="bury" value="200">Закопать</label>
+                <label>Глубина, м <input type="number" name="depth" id="depth" min="0"></label>
+                <label>Ширина, м <input type="number" name="width" id="width" min="0"></label>
+                <label>Длина, м <input type="number" name="height" id="height" min="0"></label>
+                <input type="button" value="Рассчитать" id="calc">
+                Итого, руб: <br>
+                <input type="number" name="total" id="total" readonly>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="wrapper">
+            <img class="logo__img" src="img/logo.png" alt="КолодецСпецСтрой">
+            <div class="copyright">&copy; КолодецСпецСтрой 2018. <br>Все права защищены.</div>
+            <div class="social">
+                Мы в соцсетях: <a class="social__vk" href="https://vk.com/"></a><a class="social__inst" href="https://www.instagram.com/"></a>
+                Наш e-mail: <span class="social__email">somemail@yandex.ru</span>
+            </div>
+        </div>
+    </footer>
+    <div class="popup" id="popup">
+       <span class="popup__close" id="popup-close"></span>
+        <h3 class="popup__heading">Заполните форму и мы свяжемся с вами</h3>
+        <input class="popup__input" type="text" placeholder="Имя">
+        <input class="popup__input" type="phone" placeholder="Телефон">
+        <button class="popup__btn" id="popup-send">Позвоните мне</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    
+</body>
+</html>
